@@ -159,6 +159,11 @@ body {
   text-transform: uppercase;
   position: absolute;
 }
+.what-we-do-container {
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
+}
 /*Our Team*/
 .title-our-team {
   font-weight: 700;
@@ -257,6 +262,9 @@ body {
 /* Projects */
 .project {
   border: 1px solid #eee;
+  width: 370px;
+}
+.project-container {
 }
 .project-title {
   font-weight: 700;
@@ -509,6 +517,7 @@ body {
 .project-animation:hover .overlay {
   height: 100%;
   transition: var(--transition);
+  border: none;
 }
 
 .overlay-text {
@@ -715,7 +724,6 @@ body {
   transition: var(--transition);
 }
 
-
 /*----------------------------Modal-----------------------------------*/
 .modal {
   position: fixed;
@@ -726,8 +734,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.20);
+  background: rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
 }
+
 .modal-content {
   background-color: var(--background-color);
   width: 528px;
@@ -738,15 +748,13 @@ body {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   margin: 0 auto;
   position: relative;
-  scale: 1;
 }
-
-
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
-  opacity: 1;
+  transition: var(--transition);
 }
+
 .close-btn {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
