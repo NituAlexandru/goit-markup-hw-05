@@ -74,6 +74,16 @@
         <button data-modal-open type="button" class="main-button">
           Request our service
         </button>
+        <!---------------------------------Modal------------------------------------>
+        <div class="modal is-hidden is-active" data-modal>
+          <div class="modal-content">
+            <button data-modal-close class="close-btn">
+              <svg class="icon-modal-close">
+                <use href="./images/icons.svg#icon-modal-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <!--Qualities-->
       <div class="qualities-container section">
@@ -508,17 +518,6 @@
         </div>
       </div>
     </footer>
-    <!--Modal-->
-    <div class="modal is-hidden is-visible" data-modal>
-      <div class="modal-content">
-        <button data-modal-close class="close-btn">
-          <svg class="icon-modal-close">
-            <use href="./images/icons.svg#icon-modal-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
